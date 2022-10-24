@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Practice Set 1</h1><hr>
+    <div class="red">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, debitis? Iusto obcaecati sunt necessitatibus. Dolore tenetur itaque cum et sequi repellendus facilis necessitatibus eligendi autem. Voluptas molestiae labore minima tempora doloribus exercitationem. Enim quidem corporis soluta, id sint modi non necessitatibus accusamus fugit sed tenetur repellendus et eligendi, quibusdam dicta.
+    </div>
+</body>
+</html>
