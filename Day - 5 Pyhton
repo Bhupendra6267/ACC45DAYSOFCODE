@@ -1,0 +1,29 @@
+# Code a guessing game, player has to guess a number,
+# he has limited number of guesses, and you must guide
+# him until he guesses the number. Print number of gasses he took.
+# After each guess show him number of guesses he has left.
+print('This is a number guessing game.')
+print('Guess a number between 1 to 50.')
+a = 20
+print('You only have 9 guesses.')
+guesses = 1
+while guesses <= 9:
+    a = int(input('Guess the number: '))
+    guesses += 1
+    if a >= 40:
+        print('This is too high.')
+    elif a >= 21:
+        print('You are high.')
+    elif a <= 7:
+        print('You are too low.')
+    elif a <= 19:
+        print('You are low.')
+    else:
+        print('Correct, You won the game.')
+        print(f'You took {guesses - 1} guesses.')
+        break
+    print(f"You have {10 - guesses} guesses left")
+if guesses > 9:
+    print('Game Over')
+
+
