@@ -1,0 +1,11 @@
+#include<stdio.h>
+void main() {
+    int i;
+    char a[100]="Amity University";
+    i=0;
+    do{
+        printf("%c", a[i]);
+        i++;
+    }
+    while(a[i]!='\0');
+}
