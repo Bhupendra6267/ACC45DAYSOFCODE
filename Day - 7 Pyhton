@@ -1,0 +1,44 @@
+def game():
+    import random
+
+    player = input('Choose from s w g: ')
+    list1 = ['s', 'w', 'g']
+    com = random.choice(list1)
+    print('computer chose,', com)
+
+    if player == 's' and com == 'g':
+        return 'g killed s, You loose'
+
+    elif player == 'g' and com == 's':
+        return 'g killed s, You won'
+
+    elif player == 'w' and com == 's':
+        return 's drunk w, You loose'
+
+    elif player == 's' and com == 'w':
+        return 'drunk w, You won'
+
+    elif player == 'g' and com == 'w':
+        return 'Bullet cant affect w, You loose'
+
+    elif player == 'w' and com == 'g':
+        return 'Bullet cant affect w, You won'
+
+    elif com == player:
+        return 'TIE'
+    else:
+        return 'TRY AGAIN'
+
+b = game()
+with open('hiScore.txt', 'r') as f:
+    a = f.read()
+if 'won' in b:
+    with open('hiScore.txt', 'a') as f:
+        a = f.write('Score = 1')
+if 'loose' in b:
+    with open('hiScore.txt', 'a') as f:
+        a = f.write('\nScore = 0')
+if 'TIE' in b:
+    with open('hiScore.txt', 'a') as f:
+        a = f.write('\nScore = 0')
+
