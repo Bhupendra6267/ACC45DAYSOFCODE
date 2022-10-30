@@ -1,0 +1,12 @@
+#include<stdio.h>
+float foa(float a){
+    float res;
+    res = a*9.8;
+    return res;
+}
+void main() {
+    float mass;
+    printf("Enter mass of the body: ");
+    scanf("%f", &mass);
+    printf("Force of attraction exerterd by the body is %.2f Nm/s^2", foa(mass));
+}
