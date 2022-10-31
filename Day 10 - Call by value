@@ -1,0 +1,15 @@
+#include<stdio.h>
+int sum(int a,int b);
+void main() {
+    int a=3,b=4;
+    int c;
+    printf("This is a functon of sum.\n");
+    printf("The value of a and b is %d and %d\n", a ,b);
+    c = sum(a, b);
+    printf("Sum is %d", c);
+    
+}
+int sum(int a, int b){
+    int res = a+b;
+    return res;
+} 
