@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+
+<body>
+    <div>
+        <h1>Travel form for ap trip</h1>
+        <form action="form.fph">
+            <input type="text" placeholder="Enter your name">Name
+            <br><br>
+            <label for="sectionida">
+                <input type="radio" value="section a" name="section" id="sectionida"> Section A
+            </label>
+            <label for="sectionidb">
+                <input type="radio" value="section a" name="section" id="sectionidb"> Section B
+            </label>
+            <hr>
+        </form>Food Name <br><br>
+        <form action="form.php">
+            <label for="wantfood">
+                <input type="checkbox" name="want food canteen card" id="wantfood">Burger
+            </label><br><br>
+            <label for="date1">
+                <input type="date" id="date1" placeholder="WHAT">Choose date
+            </label>
+            <select name="car" id="car">Select your car
+                <option value="omni">Omni</option>
+                <option value="omni">Lamborgini</option>
+                <option value="omni">Tata</option>
+                <option value="omni">Harrier</option>
+                <option value="omni">desire</option>
+                <option value="omni">Ford</option>
+            </select>
+        </form>
+    </div>
+</body>
+
+</html>
