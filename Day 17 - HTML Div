@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="head">
+        id="head">Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa labore soluta, enim quis molestias
+        iusto distinctio odio numquam reiciendis nulla dolorum nemo tenetur impedit temporibus neque ullam autem.
+        Deleniti similique beatae quibusdam ipsum ratione, iste tempore consequuntur explicabo ipsa quae enim hic
+        expedita, quos commodi unde maxime, dignissimos sunt sapiente!
+
+    </div>
+    <span class="one">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, recusandae! Eaque exercitationem consequuntur, soluta voluptate ea deleniti laudantium voluptatibus, asperiores nemo minima sequi eum laborum deserunt? Recusandae soluta adipisci modi animi deserunt possimus, deleniti sunt dolore praesentium explicabo ratione dolor neque at atque provident officiis sequi, eum maiores architecto ea.</span>
+
+    <p class="one">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam beatae quas deleniti repudiandae eveniet ipsam voluptate. Unde autem, quas iste doloribus blanditiis nostrum rerum consequatur aliquid dolorum officiis sed animi dolores deleniti illum sint quo excepturi. Inventore, dolorem consequuntur. Accusamus iste sed debitis modi expedita facilis itaque vel similique placeat!
+    </p>
+</body>
+
+</html>
