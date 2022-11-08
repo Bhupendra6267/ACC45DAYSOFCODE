@@ -1,0 +1,11 @@
+#include<stdio.h>
+void main() {
+    int i = 34;
+    int *ptr = &i;
+    printf("The value of ptr is: %u\n", ptr);
+    ptr++;
+    printf("The value of ptr is: %u\n", ptr);
+    ptr--;
+    printf("The value of ptr is: %u\n", ptr);
+    printf("The value of ptr is: %u\n", *ptr);
+}
