@@ -1,0 +1,54 @@
+
+#include<stdio.h>
+int main() {   
+    int a, prime, b, c, j;
+    int sum = 0; 
+    printf("Enter start range: ");
+    scanf("%d", &a); 
+    printf("Enter end range: ");
+    scanf("%d", &b);
+    printf("Prime Numbers: ");
+    int k=0;
+    
+    for(j=a; j<=b; j++) { 
+        prime = 1;
+        if(j==1 || j==0){
+            prime = 0;
+        }
+        for(c=2; c<j; c++) { 
+            if(j%c==0) {
+                prime = 0;   
+            }  
+        }
+        if(prime==1){
+            printf("%d, ",j);
+            k++;
+            sum += j;
+        }
+    }
+    int prime_num[k], p=0;
+    int x, y, prime1;
+    for(x=a; x<=b; x++) { 
+        prime1 = 1;
+        if(x==1 || x==0){
+            prime1 = 0;
+        }
+        for(y=2; y<j; y++) { 
+            if(x%y==0) {
+                prime1 = 0;   
+            }  
+        }
+        if(prime1==1){
+            prime_num[p]=x;
+        }
+    }
+    int m, sum1;
+    for(m=0;m<k;m++){
+        sum1 += prime_num[m];
+    }
+    printf("Total Prime Numberrs is %d", k);
+    printf("\nSum using Array is %d", sum1);
+    printf("\n%d", sizeof(prime_num)/4);
+    printf("\nSum of prime numbers in given range is: %d", sum);
+    return 0;
+}
