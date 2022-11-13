@@ -1,0 +1,11 @@
+console.log("Hello world")
+let a = 45
+console.log(a)
+let con = 45
+let str = "hello"
+var name = "Hello"
+console.log(con)
+console.log(str)
+console.log(name)
+let b = 645
+console.log(b)
