@@ -1,0 +1,21 @@
+
+#include<stdio.h>
+void main() {
+    // Reversing a number using for loop
+    int n,i,rev=0;
+    printf("Enter a number: ");
+    scanf("%d", &n);
+    for(i=1;i<=10;i++){
+        rev = rev * 10 + (n%10);
+        n /= 10;
+        if(n==0) break;
+    }
+    printf("Reverse using for loop is %d: \n",rev);
+
+    // Reversing a number using while loop
+    while(n!=0){
+        rev = rev * 10 + (n%10);
+        n /= 10;
+    }
+    printf("Reverse using while loop is %d: \n",rev);
+}
