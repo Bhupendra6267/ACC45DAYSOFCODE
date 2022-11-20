@@ -1,0 +1,27 @@
+#include<stdio.h>
+void main() {
+    int n,sum = 0,avg,j=0,k=0,i;
+    printf("Enter number of elements: ");
+    scanf("%d", &n);
+    printf("Enter elements: ");
+    int a[n],o[n/2],e[n/2];
+    for(i=0;i<n;i++){
+        scanf("%d", &a[i]);
+        if(a[i]%2==0){
+            e[j] = a[i];
+            j++;
+        }
+        else{
+            o[k] = a[i];
+            k++;
+        }
+    }
+    printf("Even elements: ");
+    for(i=0;i<n/2;i++) {
+        printf("%d ", e[i]);
+    }
+    printf("\nOdd elements: ");
+    for(i=0;i<n/2;i++) {
+        printf("%d ", o[i]);
+    }
+}
