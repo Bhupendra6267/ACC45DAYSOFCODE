@@ -1,0 +1,26 @@
+#include<stdio.h>
+int swap(int *,int *);
+int sort(int [],int);
+void main()
+{
+int k,n,a[]={12,3,0,9,3,0,1,12,7,18,23};
+n=sizeof(a)/4;
+sort(a,n);
+printf("\n Sorted Array:");
+for(k=0;k<n;k++)
+printf(" %d ",a[k]);
+}
+int sort(int arr[],int x)
+{
+int i,j;
+for(i=0;i<x;i++)
+for(j=0;j<i;j++)
+if(arr[i] < arr[j])
+swap(&arr[i],&arr[j]);
+}
+int swap(int *i,int *j)
+{
+int temp = *i;
+*i = *j;
+*j = temp;
+}
