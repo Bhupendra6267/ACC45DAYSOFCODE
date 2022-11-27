@@ -1,0 +1,40 @@
+#include <stdio.h>
+int sod(int,int);
+int powr(int,int);
+int order(int);
+int main()
+{
+int a,b,c;
+printf("\n Enter a No. : ");
+scanf("%d",&a);
+b = order(a);
+c = sod(a,b);
+if(a == c)
+printf("\n The number %d is Armstrong Number",a);
+else
+printf("\n The number %d is NOT Armstrong Number",a);
+return 0;
+}
+int sod(int m,int n)
+{
+if (m < 10)
+return (powr(m,n));
+else
+return (powr((m%10),n)+sod((m/10),n));
+}
+int powr(int m,int n)
+{
+if(n == 1)
+return m;
+else
+return (m * powr(m,n-1));
+}
+int order(int x)
+{
+	int n = 0;
+	while (x) {
+		n++;
+		x = x / 10;
+	}
+	return n;
+}
